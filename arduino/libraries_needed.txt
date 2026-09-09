@@ -1,0 +1,163 @@
+HT16K33 Multi-Timezone Digital Clock - Required Arduino Libraries
+====================================================================
+
+REQUIRED LIBRARIES (Must Install):
+==================================
+
+1. Adafruit_LEDBackpack
+   - Purpose: Control the HT16K33 LED backpack
+   - Installation: Arduino IDE → Sketch → Include Library → Manage Libraries
+                   Search for "Adafruit_LEDBackpack" by Adafruit
+   - Repository: https://github.com/adafruit/Adafruit_LED_Backpack
+   - Version: Latest (tested with v1.3.0+)
+
+2. Adafruit_GFX
+   - Purpose: Graphics library dependency for LEDBackpack
+   - Installation: Arduino IDE → Sketch → Include Library → Manage Libraries
+                   Search for "Adafruit GFX" by Adafruit
+   - Repository: https://github.com/adafruit/Adafruit-GFX-Library
+   - Version: Latest (tested with v1.11.0+)
+
+3. Wire
+   - Purpose: I2C communication (built-in)
+   - Note: Included with Arduino IDE, no separate installation needed
+   - Used for: SDA/SCL communication with HT16K33
+
+
+OPTIONAL LIBRARIES (For Enhanced Features):
+===========================================
+
+1. RTClib
+   - Purpose: Control DS3231 Real-Time Clock module
+   - Installation: Arduino IDE → Sketch → Include Library → Manage Libraries
+                   Search for "RTClib" by Adafruit
+   - Repository: https://github.com/adafruit/RTClib
+   - Version: Latest (tested with v2.1.0+)
+   - When to use: If you have a DS3231 RTC module connected
+   - Enable in config.h: Set USE_RTC_MODULE to true
+
+2. Time (Timezone)
+   - Purpose: Advanced timezone handling
+   - Installation: Arduino IDE → Sketch → Include Library → Manage Libraries
+                   Search for "Time" by Paul Stoffregen (Teensy)
+   - Repository: https://github.com/PaulStoffregen/Time
+   - Version: Latest (tested with v1.6.1+)
+   - When to use: For automatic DST handling (not included in current sketch)
+   - Status: Currently optional, future enhancement
+
+
+INSTALLATION STEPS (Arduino IDE):
+==================================
+
+Step 1: Open Arduino IDE
+Step 2: Go to Sketch → Include Library → Manage Libraries
+Step 3: Search for each library name one by one:
+        - "Adafruit_LEDBackpack"
+        - "Adafruit GFX"
+        (RTClib is optional)
+Step 4: Click "Install" button for each
+Step 5: Wait for installation to complete
+Step 6: Close the Library Manager
+
+
+MANUAL INSTALLATION (Alternative):
+===================================
+
+If automatic installation fails:
+
+1. Download library ZIP files from GitHub repositories
+2. Extract ZIP files
+3. In Arduino IDE: Sketch → Include Library → Add .ZIP Library
+4. Navigate to extracted library folders
+5. Select and open (files should be in Arduino/libraries/ folder)
+
+
+VERIFICATION:
+=============
+
+To verify libraries are installed correctly:
+1. Open Arduino IDE
+2. Go to Sketch → Include Library
+3. Check that "Adafruit_LEDBackpack" appears in the list
+4. Check that "Adafruit GFX" appears in the list
+5. Check that "Wire" appears (built-in, should always be there)
+
+
+TROUBLESHOOTING:
+================
+
+Error: "Adafruit_LEDBackpack.h: No such file or directory"
+→ Library not installed. Follow installation steps above.
+
+Error: "Invalid library found in /Arduino/libraries/"
+→ Library corrupted. Delete folder and reinstall.
+
+Error: "Adafruit_GFX not found"
+→ LEDBackpack depends on GFX. Install GFX library first.
+
+I2C communication not working:
+→ Wire library is already included, no action needed
+→ Check if other I2C libraries conflict
+
+
+LIBRARY COMPATIBILITY:
+======================
+
+Arduino Boards Tested:
+✓ Arduino Uno
+✓ Arduino Nano
+✓ Arduino Mega 2560
+✓ Arduino Leonardo
+✓ Arduino Due
+✓ Arduino MKR WiFi 1010
+
+Python Boards (Use Python implementation instead):
+→ Raspberry Pi
+→ Raspberry Pi Pico
+→ BeagleBone
+
+
+INSTALLATION COMMANDS (If Using Arduino CLI):
+==============================================
+
+# Install all required libraries
+arduino-cli lib install "Adafruit_LEDBackpack"
+arduino-cli lib install "Adafruit GFX Library"
+arduino-cli lib install "RTClib"  # Optional
+
+# List installed libraries
+arduino-cli lib list
+
+# Update all libraries
+arduino-cli lib upgrade --all
+
+
+VERSION HISTORY:
+================
+
+2026-09-09 - Initial library list
+- Adafruit_LEDBackpack v1.3.0+
+- Adafruit GFX v1.11.0+
+- RTClib v2.1.0+ (optional)
+
+
+SUPPORT & RESOURCES:
+====================
+
+Adafruit Learning System: https://learn.adafruit.com/
+Adafruit GitHub: https://github.com/adafruit
+Arduino Libraries Reference: https://www.arduino.cc/reference/en/libraries/
+
+
+NOTES:
+======
+
+- Always install the LATEST version of libraries
+- Older versions may have bugs or compatibility issues
+- If sketch won't compile, try updating all libraries
+- Some libraries may auto-install dependencies
+- Check library documentation for requirements
+
+---
+
+Last Updated: 2026-09-09
