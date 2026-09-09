@@ -1,0 +1,235 @@
+{
+  "timezones": {
+    "PST": {
+      "name": "Pacific Standard Time",
+      "offset": -8,
+      "region": "US West Coast",
+      "cities": ["Los Angeles", "San Francisco", "Seattle"]
+    },
+    "PDT": {
+      "name": "Pacific Daylight Time",
+      "offset": -7,
+      "region": "US West Coast (Summer)",
+      "cities": ["Los Angeles", "San Francisco", "Seattle"]
+    },
+    "MST": {
+      "name": "Mountain Standard Time",
+      "offset": -7,
+      "region": "US Mountain",
+      "cities": ["Denver", "Phoenix", "Salt Lake City"]
+    },
+    "MDT": {
+      "name": "Mountain Daylight Time",
+      "offset": -6,
+      "region": "US Mountain (Summer)",
+      "cities": ["Denver", "Phoenix", "Salt Lake City"]
+    },
+    "CST": {
+      "name": "Central Standard Time",
+      "offset": -6,
+      "region": "US Central",
+      "cities": ["Chicago", "Dallas", "Houston"]
+    },
+    "CDT": {
+      "name": "Central Daylight Time",
+      "offset": -5,
+      "region": "US Central (Summer)",
+      "cities": ["Chicago", "Dallas", "Houston"]
+    },
+    "EST": {
+      "name": "Eastern Standard Time",
+      "offset": -5,
+      "region": "US East Coast",
+      "cities": ["New York", "Boston", "Washington DC"]
+    },
+    "EDT": {
+      "name": "Eastern Daylight Time",
+      "offset": -4,
+      "region": "US East Coast (Summer)",
+      "cities": ["New York", "Boston", "Washington DC"]
+    },
+    "GMT": {
+      "name": "Greenwich Mean Time",
+      "offset": 0,
+      "region": "United Kingdom & West Africa",
+      "cities": ["London", "Accra", "Lisbon"]
+    },
+    "UTC": {
+      "name": "Coordinated Universal Time",
+      "offset": 0,
+      "region": "Universal Standard",
+      "cities": ["Reference Time"]
+    },
+    "CET": {
+      "name": "Central European Time",
+      "offset": 1,
+      "region": "Central Europe",
+      "cities": ["Paris", "Berlin", "Rome", "Madrid"]
+    },
+    "CEST": {
+      "name": "Central European Summer Time",
+      "offset": 2,
+      "region": "Central Europe (Summer)",
+      "cities": ["Paris", "Berlin", "Rome", "Madrid"]
+    },
+    "EET": {
+      "name": "Eastern European Time",
+      "offset": 2,
+      "region": "Eastern Europe",
+      "cities": ["Cairo", "Helsinki", "Athens"]
+    },
+    "EEST": {
+      "name": "Eastern European Summer Time",
+      "offset": 3,
+      "region": "Eastern Europe (Summer)",
+      "cities": ["Cairo", "Helsinki", "Athens"]
+    },
+    "MSK": {
+      "name": "Moscow Standard Time",
+      "offset": 3,
+      "region": "Russia",
+      "cities": ["Moscow", "St. Petersburg"]
+    },
+    "IST": {
+      "name": "Indian Standard Time",
+      "offset": 5.5,
+      "region": "India",
+      "cities": ["New Delhi", "Mumbai", "Bangalore"]
+    },
+    "PKT": {
+      "name": "Pakistan Standard Time",
+      "offset": 5,
+      "region": "Pakistan",
+      "cities": ["Karachi", "Lahore", "Islamabad"]
+    },
+    "GST": {
+      "name": "Gulf Standard Time",
+      "offset": 4,
+      "region": "Middle East",
+      "cities": ["Dubai", "Abu Dhabi", "Doha"]
+    },
+    "ACST": {
+      "name": "Australian Central Standard Time",
+      "offset": 9.5,
+      "region": "Australia Central",
+      "cities": ["Adelaide", "Darwin"]
+    },
+    "AEST": {
+      "name": "Australian Eastern Standard Time",
+      "offset": 10,
+      "region": "Australia East",
+      "cities": ["Sydney", "Melbourne", "Brisbane"]
+    },
+    "AEDT": {
+      "name": "Australian Eastern Daylight Time",
+      "offset": 11,
+      "region": "Australia East (Summer)",
+      "cities": ["Sydney", "Melbourne", "Brisbane"]
+    },
+    "NZST": {
+      "name": "New Zealand Standard Time",
+      "offset": 12,
+      "region": "New Zealand",
+      "cities": ["Auckland", "Wellington"]
+    },
+    "NZDT": {
+      "name": "New Zealand Daylight Time",
+      "offset": 13,
+      "region": "New Zealand (Summer)",
+      "cities": ["Auckland", "Wellington"]
+    },
+    "JST": {
+      "name": "Japan Standard Time",
+      "offset": 9,
+      "region": "Japan",
+      "cities": ["Tokyo", "Osaka", "Kyoto"]
+    },
+    "SGT": {
+      "name": "Singapore Standard Time",
+      "offset": 8,
+      "region": "Singapore & Malaysia",
+      "cities": ["Singapore", "Kuala Lumpur"]
+    },
+    "HKT": {
+      "name": "Hong Kong Time",
+      "offset": 8,
+      "region": "Hong Kong",
+      "cities": ["Hong Kong"]
+    },
+    "CST_CHINA": {
+      "name": "China Standard Time",
+      "offset": 8,
+      "region": "China",
+      "cities": ["Beijing", "Shanghai", "Shanghai"]
+    },
+    "BRT": {
+      "name": "Brasília Time",
+      "offset": -3,
+      "region": "Brazil",
+      "cities": ["São Paulo", "Rio de Janeiro", "Brasília"]
+    },
+    "BRST": {
+      "name": "Brasília Summer Time",
+      "offset": -2,
+      "region": "Brazil (Summer)",
+      "cities": ["São Paulo", "Rio de Janeiro", "Brasília"]
+    },
+    "ART": {
+      "name": "Argentina Standard Time",
+      "offset": -3,
+      "region": "Argentina",
+      "cities": ["Buenos Aires", "Córdoba"]
+    },
+    "HST": {
+      "name": "Hawaii Standard Time",
+      "offset": -10,
+      "region": "Hawaii",
+      "cities": ["Honolulu"]
+    },
+    "AKST": {
+      "name": "Alaska Standard Time",
+      "offset": -9,
+      "region": "Alaska",
+      "cities": ["Anchorage", "Juneau"]
+    }
+  },
+  "common_selections": {
+    "world_capitals": [
+      {"city": "New York", "timezone": "EST", "offset": -5},
+      {"city": "London", "timezone": "GMT", "offset": 0},
+      {"city": "Paris", "timezone": "CET", "offset": 1},
+      {"city": "Cairo", "timezone": "EET", "offset": 2},
+      {"city": "Moscow", "timezone": "MSK", "offset": 3},
+      {"city": "New Delhi", "timezone": "IST", "offset": 5.5},
+      {"city": "Bangkok", "timezone": "ICT", "offset": 7},
+      {"city": "Beijing", "timezone": "CST_CHINA", "offset": 8},
+      {"city": "Tokyo", "timezone": "JST", "offset": 9},
+      {"city": "Sydney", "timezone": "AEST", "offset": 10}
+    ],
+    "us_timezones": [
+      {"city": "Seattle", "timezone": "PST", "offset": -8},
+      {"city": "Denver", "timezone": "MST", "offset": -7},
+      {"city": "Chicago", "timezone": "CST", "offset": -6},
+      {"city": "New York", "timezone": "EST", "offset": -5},
+      {"city": "Honolulu", "timezone": "HST", "offset": -10}
+    ],
+    "europe_timezones": [
+      {"city": "London", "timezone": "GMT", "offset": 0},
+      {"city": "Paris", "timezone": "CET", "offset": 1},
+      {"city": "Cairo", "timezone": "EET", "offset": 2},
+      {"city": "Moscow", "timezone": "MSK", "offset": 3}
+    ],
+    "asia_pacific_timezones": [
+      {"city": "New Delhi", "timezone": "IST", "offset": 5.5},
+      {"city": "Bangkok", "timezone": "ICT", "offset": 7},
+      {"city": "Beijing", "timezone": "CST_CHINA", "offset": 8},
+      {"city": "Tokyo", "timezone": "JST", "offset": 9},
+      {"city": "Sydney", "timezone": "AEST", "offset": 10}
+    ]
+  },
+  "notes": {
+    "dst_info": "Many regions use Daylight Saving Time (DST). The offset values listed here are for standard time. During DST, the offset changes by ±1 hour. Manual adjustment may be needed.",
+    "half_hour_zones": "Some timezones use 30-minute or 45-minute offsets (e.g., IST = UTC+5:30). Configure these in the Arduino code using floating-point values if needed.",
+    "usage": "To use a timezone in your Arduino config.h, look up the offset value from this file and set PRIMARY_TIMEZONE or SECONDARY_TIMEZONE accordingly."
+  }
+}
